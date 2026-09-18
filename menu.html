@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Меню — Меридиан</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">Мери<span>диан</span></a>
+      <button class="menu-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Меню">☰</button>
+      <nav class="nav" data-nav>
+        <a href="index.html">Главная</a>
+        <a href="menu.html" aria-current="page">Меню</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <a class="btn" href="contacts.html">Заявка</a>
+    </div>
+  </header>
+  <main class="section">
+    <div class="wrap" data-menu>
+      <p class="kicker">98 позиций</p>
+      <h1>Меню</h1>
+      <input class="search" type="search" data-search placeholder="Найти блюдо" aria-label="Поиск по меню">
+      <div class="filters" data-filters></div>
+      <div class="menu-grid" data-list></div>
+    </div>
+  </main>
+  <script src="data/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
