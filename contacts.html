@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — Меридиан</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">Мери<span>диан</span></a>
+      <button class="menu-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Меню">☰</button>
+      <nav class="nav" data-nav>
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html" aria-current="page">Контакты</a>
+      </nav>
+      <a class="btn" href="tel:+79880770315">Позвонить</a>
+    </div>
+  </header>
+  <main class="section">
+    <div class="wrap">
+      <p class="kicker">Связь</p>
+      <h1>Контакты и заявка</h1>
+      <p class="muted">Москва, Ломоносовский проспект, 5, 1 этаж.</p>
+      <p class="muted">Заказ: <a href="tel:+79880770315">+7 988 077-03-15</a></p>
+      <p class="muted">Ежедневно 10:00–22:00</p>
+      <form class="form" data-order-form>
+        <div class="form-fields">
+          <input name="name" type="text" required maxlength="80" placeholder="Имя">
+          <input name="phone" type="tel" required maxlength="20" placeholder="Телефон">
+          <input name="people" type="number" min="1" max="20" placeholder="Сколько гостей">
+          <input name="when" type="text" maxlength="80" placeholder="Когда удобно">
+          <textarea name="note" maxlength="500" placeholder="Комментарий"></textarea>
+          <p class="form-note" data-form-error hidden>Укажите имя и телефон.</p>
+          <button class="btn" type="submit">Отправить в Telegram</button>
+        </div>
+        <p class="form-ok">Текст заявки сформирован.</p>
+      </form>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
